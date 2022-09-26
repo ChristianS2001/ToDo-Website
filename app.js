@@ -1,13 +1,18 @@
-let input = document.querySelector('.entered-list');
-let addButton = document.querySelector('.add-list');
-let task = document.querySelector('.tasks');
+let addToDoButton = document.getElementById('addToDo');
+let toDoContainer = document.getElementById('toDoContainer');
+let inputField = document.getElementById('inputField');
 
-//add a button event listener
-
-input.addEventListener('keyup', () => {
-    if(input.ariaValueMax.trim() !== 0){
-        addButton.classList.add('active')
-    } else {
-        addButton.classList.add('active')
-    }
+addToDoButton.addEventListener('click', function(){
+    var paragraph = document.createElement('p');
+    paragraph.classList.add('paragraph-styling')
+    paragraph.innerText = inputField.value;
+    toDoContainer.appendChild(paragraph); //actually save what we input
+    inputField.value = ""; //this removes the input val from inputField
+    paragraph.addEventListener('click', function(){
+        paragraph.style.textDecoration = "line-through";
+    })
+    paragraph.addEventListener('dblclick', function(){ //dbl means double
+        toDoContainer.removeChild(paragraph);
+    })
+    
 })

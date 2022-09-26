@@ -1,92 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Oswald', sans-serif;    
+html, body{
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid red; /*just to see where body is*/
+    font-family: Oswald;
+    letter-spacing: 0px;
 }
-body{
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 75vh;
-    width: 100vw;
-}
-.title{
+h1{
+    text-align: center;
     font-size: 50px;
-    font-weight: 750;
-    color: black;
-    letter-spacing: 3px;
-    margin: 30px 0;
 }
-.todo-list{
-    width: 450px;
-    padding: 20px;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    background-color: white;
-}
-.list-head{
-    display: grid;
-    grid-template-columns: 6fr 1fr;
-    gap: 20px
-}
-.entered-list{
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid lightskyblue;
-    font-size: 15px;
-    outline: none;
-}
-.add-list {
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(8, 6, 133);
-    outline: none;
-    font-size: 15px;
-    color: #fff;
-    cursor: pointer;
-    opacity: .6;
-    pointer-events: none;
-}
-.add-list.active {
-    opacity: 1;
-    pointer-events: all;
-}
-
-.tasks{
+.Container{
     width: 100%;
-    margin-top: 30px;
+    border: 1px solid red; /*just to see where body is*/
 }
-.item{
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 7px 10px rgb(107, 107, 107);
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#inputField {
+    width: 300px;
+    height: 46px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 25px;
+    vertical-align: middle;
 }
-.item p{ /*adjusting the paragraph element text for "new item here"*/
-    font-size: 15px;
-    font-weight: 400;
-    color: #111;
-    letter-spacing: 1px;
+#addToDo{
+    height: 50px;
+    width: 75px;
+    vertical-align: middle;
+    font-size: 20px;
 }
-.item.completed p{
-    text-decoration: line-through;
-    color: black;
+#sortToDo{
+    height: 50px;
+    width: 75px;
+    vertical-align: middle;
+    font-size: 20px;
 }
-
-.item-button{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+#filterToDo{
+    height: 50px;
+    width: 77px;
+    vertical-align: middle;
+    font-size: 20px;
 }
-.item-button i {
-    color: black;
-    font-size: 18px;
+.to-dos {
+    margin-top: 25px; /*distance at the top from the inputline and buttons*/
+    border: 1px solid red;
+}
+.paragraph-styling{ /*a class we will add via js* (tasks)*/
+    margin: 0;
     cursor: pointer;
+    font-size: 20px;
 }
