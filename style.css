@@ -44,9 +44,25 @@ h1{
 .to-dos {
     margin-top: 25px; /*distance at the top from the inputline and buttons*/
     border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1px;
 }
 .paragraph-styling{ /*a class we will add via js* (tasks)*/
     margin: 0;
-    cursor: pointer;
     font-size: 20px;
+    flex-grow: 1;
+}
+.removeItemButton-styling{
+    border: none;
+    cursor: pointer;
+}
+.row-style {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+}
+.checkBox-style{
+    cursor: pointer;
 }

@@ -5,15 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>To-Do List</title>
 </head>
 <body>
     <h1>My To-Do List</h1>
     <div class="Container">
-        <input id="inputField" type="text" placeholder="Enter a task..."name="hint"><button id="addToDo">Add</button><button id="sortToDo">Sort</button><button id="filterToDo">Filter</button>
+        <form id="toDoForm"><input id="inputField" type="text" placeholder="Enter a task..."name="hint">
+            <button type="submit" id="addToDo">Add</button>
+            Sort<select id="sortToDo">
+                <option value="default">-Sort-</option>
+                <option value="eToL">Earliest to latest</option>
+                <option value="lToE">Latest to earliest</option>
+            </select>
+            Filter<select id="filterToDo">
+                <option value="default">-Filter-</option>
+                <option value="completedItems">Completed tasks</option>
+                <option value="nonCompletedItems">To-Do tasks</option>
+                <option value="allItems">All tasks</option>
+            </select>
+        </form>
         
-        <div class="to-dos" id="toDoContainer">
-        </div>
+        <div class="to-dos" id="toDoContainer"></div>
     </div>
     <script src="app.js"></script>
 </body>
