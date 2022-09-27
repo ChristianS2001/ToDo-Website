@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 html, body{
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
-    border: 1px solid red; /*just to see where body is*/
+    background-color: #219ebc;
     font-family: Oswald;
     letter-spacing: 0px;
 }
 h1{
+    color: white;
+    margin: 0px;
     text-align: center;
-    font-size: 50px;
+    font-size: 65px;
+    text-decoration: underline;
 }
 .Container{
-    width: 100%;
-    border: 1px solid red; /*just to see where body is*/
+    margin: 0 auto;
+    width: 30%;
+    background-color: #97c7ca; /*just to see where body is*/
+    border: 5px solid beige;
 }
 #inputField {
     width: 300px;
@@ -30,23 +35,19 @@ h1{
     font-size: 20px;
 }
 #sortToDo{
-    height: 50px;
-    width: 75px;
+
     vertical-align: middle;
     font-size: 20px;
 }
 #filterToDo{
-    height: 50px;
-    width: 77px;
+
     vertical-align: middle;
     font-size: 20px;
 }
 .to-dos {
-    margin-top: 25px; /*distance at the top from the inputline and buttons*/
-    border: 1px solid red;
+    margin-top: 10px; /*distance at the top from the inputline and buttons*/
     display: flex;
     flex-direction: column;
-    row-gap: 1px;
 }
 .paragraph-styling{ /*a class we will add via js* (tasks)*/
     margin: 0;
@@ -54,6 +55,7 @@ h1{
     flex-grow: 1;
 }
 .removeItemButton-styling{
+    background-color: rgb(0, 0, 0, 0);
     border: none;
     cursor: pointer;
 }
@@ -65,4 +67,16 @@ h1{
 }
 .checkBox-style{
     cursor: pointer;
+}
+.Controls{
+    display: flex;
+    flex-direction: column;
+}
+.ControlRow{
+    justify-content: center;
+    display: flex;
+}
+.blue{
+    width: 100%;
+    background-color: #023047;
 }

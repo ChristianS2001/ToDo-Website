@@ -9,21 +9,22 @@
     <title>To-Do List</title>
 </head>
 <body>
-    <h1>My To-Do List</h1>
+    <div class="blue"><h1>My To-Do List</h1></div>
     <div class="Container">
-        <form id="toDoForm"><input id="inputField" type="text" placeholder="Enter a task..."name="hint">
-            <button type="submit" id="addToDo">Add</button>
-            Sort<select id="sortToDo">
+        <form id="toDoForm"><div class="Controls"><div class="ControlRow"><input id="inputField" type="text" placeholder="Enter a task..."name="hint">
+            <button type="submit" id="addToDo">Add</button></div>
+            <div class="ControlRow"><select id="sortToDo">
                 <option value="default">-Sort-</option>
                 <option value="eToL">Earliest to latest</option>
                 <option value="lToE">Latest to earliest</option>
             </select>
-            Filter<select id="filterToDo">
+            <select id="filterToDo">
                 <option value="default">-Filter-</option>
                 <option value="completedItems">Completed tasks</option>
                 <option value="nonCompletedItems">To-Do tasks</option>
                 <option value="allItems">All tasks</option>
-            </select>
+            </select></div>
+        </div>
         </form>
         
         <div class="to-dos" id="toDoContainer"></div>

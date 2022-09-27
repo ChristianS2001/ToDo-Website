@@ -120,14 +120,14 @@ enterTask.addEventListener('submit', function(event){
     checkBoxButton.addEventListener('dblclick', function(){
         toDoContainer.insertBefore(row, toDoContainer.firstChild);//move back to top of list
         paragraph.style.textDecoration = "none";
-        row.style.background = "white";
+        row.style.background = "";
         checkBoxButton.innerText = "check_box_outline_blank";
         row.setAttribute("data-status", "incomplete");
     })
     paragraph.addEventListener('dblclick', function(){ //making it undo again
         toDoContainer.insertBefore(row, toDoContainer.firstChild);
         paragraph.style.textDecoration = "none";
-        row.style.background = "white";
+        row.style.background = "";
         checkBoxButton.innerText = "check_box_outline_blank";
         row.setAttribute("data-status", "incomplete");
     })
