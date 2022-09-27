@@ -1,7 +1,5 @@
 README
 
-this is for the diamondLife internship coding project!
-I will try to be as thourough as I can with my code and make sure to keep myself organized throughout the process
+This was a coding challenge for an internship application stage.
 
-I would like to thank you for the oppurtunity and hope to make it to the interview stage!
-
+It has full functionality and can filter, sort, add, remove, check done, and uncheck complete tasks.
